@@ -1,0 +1,28 @@
+div {
+  display: inline;
+  margin-left: 65px;
+}
+
+h2.shopping-list {
+  margin: 55px 0px 55px 125px;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+form {
+  width: 70%;
+  margin: 35px 0px 0px 135px;
+
+  h2 {
+    margin: 55px 0px 55px 0px;
+    font-size: 32px;
+    text-decoration: underline;
+  }
+  label {
+    margin-top: 25px;
+  }
+}
+
+button.btn.btn-success {
+  margin-top: 35px;
+}

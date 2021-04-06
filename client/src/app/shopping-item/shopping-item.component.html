@@ -1,0 +1,46 @@
+<form #form="ngForm" (ngSubmit)="addItem(form)">
+    <h2>Add Item</h2>
+    <div class="form-group">
+        <label for="">Name:</label>
+        <input type="text" class="form-control" name="itemName" value="" ngModel>
+    </div>
+    <div class="form-group">
+        <label for="">Quantity:</label>
+        <input type="number" class="form-control" name="itemQuantity" value="" ngModel>
+    </div>
+
+    <button type="submit" name="buttom" class="btn btn-success">Save</button>
+</form>
+
+
+
+
+
+<h2 class="shopping-list">Shopping List</h2>
+
+<div *ngFor='let item of shoppingItemList '>
+
+    <div id="checkbox">
+        <input type="checkbox" name="">
+    </div>
+
+    <div id="item-name">
+        {{item.itemName}}
+    </div>
+
+    <div id="item-bought">
+        {{item.itemQuantity}}
+    </div>
+
+    <div id="edit-btn">
+        <button type="button" name="button" class="btn btn-primary">Edit</button>
+    </div>
+
+    <div id="delete-btn">
+        <button type="button" name="button" class="btn btn-danger" (click)="deleteItem(item._id)">Delete</button>
+    </div>
+
+    <br>
+    <br>
+
+</div>
